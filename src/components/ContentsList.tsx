@@ -5,7 +5,6 @@ interface ContentsListProps {
   pageId: string,
   src: string,
   alt: string,
-  isCardView: boolean
 }
 
 const ContentsDesc = ({pageId} : { pageId: string }) => {
@@ -18,13 +17,13 @@ const ContentsDesc = ({pageId} : { pageId: string }) => {
   )
 }
 
-const ContentsList = ({pageId, src, alt, isCardView}: ContentsListProps) => {
+const ContentsList = ({pageId, src, alt}: ContentsListProps) => {
   return (
     <li>
         <Link href={`/view/${pageId}`}>
           <a>
             <img src={src} alt={alt} />
-          {!isCardView && <ContentsDesc pageId={ pageId } />}
+            <ContentsDesc pageId={ pageId } />
           </a>
         </Link>
     </li>

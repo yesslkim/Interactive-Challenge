@@ -29,7 +29,7 @@ const Home = () => {
         <ul>
           {
             contents.map(content => (
-              <ContentsList key={content.pageId} pageId={content.pageId} src={content.src} alt={content.alt} isCardView={ isCardView } />
+              <ContentsList key={content.pageId} pageId={content.pageId} src={content.src} alt={content.alt}/>
             ))
           }
         </ul>
