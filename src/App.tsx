@@ -12,7 +12,8 @@ function App() {
     <div className="App">
       <Header />
       <Route path='/' component={Home}/>
-      <Route path='/view/:pageId' component={ContentsView}/>
+      <Route path='/view/:pageId' component={ContentsView}>
+      </Route>
       <Route path='/contact' component={Contact}/>
       <Footer/>
     </div>
