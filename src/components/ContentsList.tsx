@@ -1,17 +1,32 @@
 import { Link } from 'wouter';
+import { contentsDetail } from './Contents';
 
 interface ContentsListProps {
-  [key: string] : string
+  pageId: string,
+  src: string,
+  alt: string,
+  isCardView: boolean
 }
 
-const ContentsList = ({pageId, src, alt}: ContentsListProps) => {
+const ContentsDesc = ({pageId} : { pageId: string }) => {
+  const [contentsInfo] = contentsDetail.filter(contentDetail => contentDetail.pageId === pageId);
+  return (
+    <div>
+      <h2>{contentsInfo.title}</h2>
+      <p>{contentsInfo.para}</p>
+    </div>
+  )
+}
+
+const ContentsList = ({pageId, src, alt, isCardView}: ContentsListProps) => {
   return (
     <li>
-      <div>
         <Link href={`/view/${pageId}`}>
-          <img src={src} alt={alt} />
+          <a>
+            <img src={src} alt={alt} />
+          {!isCardView && <ContentsDesc pageId={ pageId } />}
+          </a>
         </Link>
-      </div>
     </li>
   );
 }

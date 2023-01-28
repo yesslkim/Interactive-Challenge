@@ -13,11 +13,11 @@ const ContentsView = () => {
   const [contentInfo] = contentsDetail.filter(content => content.pageId === params.pageId);
 
   return (
-    <section>
-      <h2>{ contentInfo.title }</h2>
-      <iframe src={`https://editor.p5js.org/yesslkim/full/${params.pageId}`} width={540} height={540}></iframe>
-      <p>{ contentInfo.para}</p>
-    </section>
+    <main className='main'>
+      <h2 className='sub_title'>{ contentInfo.title }</h2>
+      <iframe src={`https://editor.p5js.org/yesslkim/full/${params.pageId}`} className='preview'></iframe>
+      <p className='sub_desc'>{ contentInfo.para}</p>
+    </main>
   );
 }
  

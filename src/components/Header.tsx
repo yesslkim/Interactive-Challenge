@@ -5,9 +5,9 @@ const Header = () => {
   const [location] = useLocation();
 
   return (
-    <header>
-      <h1><img src={Logo} alt='Interactive Projects' /></h1>
-      <nav>
+    <header className='header'>
+      <h1 className='logo'><img src={Logo} alt='' /></h1>
+      <nav className='gnb'>
         <ul>
           <li><Link href="/" className={location === '/' ? 'active': ''}>HOME</Link></li>
           <li><Link href="/contact" className={location === '/contact' ? 'active': ''}>CONTACT</Link></li>
