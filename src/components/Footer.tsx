@@ -1,5 +1,9 @@
 const Footer = () => {
-  return ( <footer>푸터</footer> );
+  return (
+    <footer>
+      <p>Copyright 2023. yesslkim. All rights reserved.</p>
+    </footer>
+  );
 }
  
 export default Footer;
