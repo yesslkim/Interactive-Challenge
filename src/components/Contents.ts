@@ -1,6 +1,6 @@
 import img230125 from '../assets/images/230125.png';
 import img230128 from '../assets/images/230128.png';
-import img230129 from '../assets/images/230129.PNG';
+import img230129 from '../assets/images/230129.png';
 
 export const contents = [
   {
