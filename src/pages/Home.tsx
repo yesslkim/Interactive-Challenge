@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
-import { contents } from '../components/Contents';
-import ContentsList from '../components/ContentsList';
+import { contents } from '@components/Contents';
+import ContentsList from '@components/ContentsList';
 
 const Home = () => {
   const [isCardView, setIsCardView] = useState(true);

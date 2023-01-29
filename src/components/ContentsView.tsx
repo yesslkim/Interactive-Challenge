@@ -1,5 +1,5 @@
 import { useRoute } from 'wouter';
-import { contentsDetail } from './Contents';
+import { contentsDetail } from '@components/Contents';
 
 const ContentsView = () => {
   const [_, params] = useRoute('/view/:pageId');

@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { contentsDetail } from './Contents';
+import { contentsDetail } from '@components/Contents';
 
 interface ContentsListProps {
   pageId: string,

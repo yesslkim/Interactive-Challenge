@@ -1,5 +1,5 @@
 import { Link, useLocation} from "wouter";
-import Logo from '../assets/images/logo.png';
+import Logo from '@assets/images/logo.png';
 
 const Header = () => {
   const [location] = useLocation();
