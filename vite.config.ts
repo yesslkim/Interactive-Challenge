@@ -10,7 +10,9 @@ export default defineConfig({
       useTypescript: true,
     }),
   ],
-  base: './',
+  resolve: {
+    preserveSymlinks: true
+  },
   server: {
     open: '/',
   },
